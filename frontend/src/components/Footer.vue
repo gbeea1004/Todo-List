@@ -1,39 +1,16 @@
 <template>
-   <v-footer
-    color="primary lighten-1"
-    padless
+  <v-footer padless color="teal accent-3">
+    <v-col
+      class="text-center brown--text"
+      cols="12"
     >
-    <v-row
-      justify="center"
-      no-gutters
-    >
-      <v-btn
-        v-for="link in links"
-        :key="link"
-        color="white"
-        text
-        rounded
-        class="my-1"
-      >
-        {{ link }}
-      </v-btn>
-      <v-col
-        class="primary lighten-2 py-4 text-center white--text"
-        cols="12"
-      >
-        Copyright (C) {{ thisYear }} <strong>Sung Geon Hee</strong> all rights reserved.
-      </v-col>
-    </v-row>
+      Copyright (C) {{ thisYear }} <strong>Sung Geon Hee</strong> all rights reserved.
+    </v-col>
   </v-footer>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      links: ['Blog']
-    }
-  },
   computed: {
     thisYear() {
         return new Date().getFullYear();
