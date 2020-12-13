@@ -35,7 +35,7 @@ export default {
             drawer: false,
             links: [
                 { icon: 'mdi-view-dashboard', text: 'Dashboard', route: '/' },
-                { icon: 'mdi-folder', text: 'My', route: '/myInfo' }
+                { icon: 'mdi-account', text: 'My', route: '/myInfo' }
             ]
         }
     }
