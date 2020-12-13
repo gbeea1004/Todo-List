@@ -2,13 +2,13 @@
   <nav>
       <v-app-bar flat app color="white">
           <v-app-bar-nav-icon class="grey--text" @click="drawer = !drawer"></v-app-bar-nav-icon>
-          <v-toolbar-title class="text-uppercase grey--text">
+          <v-toolbar-title class="text-uppercase">
             <span class="font-weight-light">Todo</span>
             <span>List</span>
           </v-toolbar-title>
           <v-spacer></v-spacer>
           <v-btn text color="grey">
-              <span>Sign Out</span>
+              <span>로그아웃</span>
               <v-icon right>mdi-exit-to-app</v-icon>
           </v-btn>
       </v-app-bar>
@@ -34,8 +34,8 @@ export default {
         return {
             drawer: false,
             links: [
-                { icon: 'mdi-view-dashboard', text: 'Dashboard', route: '/' },
-                { icon: 'mdi-account', text: 'My', route: '/myInfo' }
+                { icon: 'mdi-view-dashboard', text: '대시보드', route: '/' },
+                { icon: 'mdi-account', text: '내 정보', route: '/myInfo' }
             ]
         }
     }
